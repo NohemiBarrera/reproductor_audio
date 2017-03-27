@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Reproductor cool</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="duck.ico">
+    <script type="text/javascript" src="javascript.js"></script>
+  </head>
+  
+  <body>
+  <h3 align="center" style="color: #ff61b6">Reproductor</h3>
+  <div align="center">
+  <img src="duck.png" height="70" width="70">
+  </div>
+  <hr>
+    <p align="center">
+      <input type="text" id="audiofile" size="80" value="" />
+    </p>
+    <audio id="miaudio">
+      Ño
+    </audio>
+    <div align="center">
+    <button id="play" onclick="playAudio();">
+      Play
+    </button>
+    
+    <button onclick="rewindAudio();">
+      Reiniciar
+    </button>
+    <button onclick="forwardAudio();">
+      Adelantar
+    </button>
+    <button onclick="restartAudio();">
+      Reiniciar
+    </button>
+    </div>
+    <hr>
+    <div style="color: #61b6ff">
+    	<p>Elige una de las siguientes canciones (copia y pega en el reproductor):<br>
+    	<ul>
+    		<li>love_lost.mp3</li>
+    		<li>sadness.mp3</li>
+    		<li>origin_of_love.mp3</li>
+    		<li>1901.mp3</li>
+    		<li>friendly_people.mp3</li>
+    	</ul>
+    	</p>
+    </div>
+  </body>
+
+</html>
