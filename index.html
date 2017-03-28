@@ -5,11 +5,13 @@
     <title>Reproductor cool</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="duck.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="javascript.js"></script>
   </head>
   
   <body>
-  <h3 align="center" style="color: #ff61b6">Reproductor</h3>
+  <hr>
+  <hr>
   <div align="center">
   <img src="duck.png" height="70" width="70">
   </div>
@@ -21,19 +23,10 @@
       Ño
     </audio>
     <div align="center">
-    <button id="play" onclick="playAudio();">
-      Play
-    </button>
-    
-    <button onclick="rewindAudio();">
-      Reiniciar
-    </button>
-    <button onclick="forwardAudio();">
-      Adelantar
-    </button>
-    <button onclick="restartAudio();">
-      Reiniciar
-    </button>
+    <button id="play" onclick="playAudio();"><i class="material-icons">pause</i></button>
+    <button onclick="rewindAudio();"><i class="material-icons">fast_rewind</i></button>
+    <button onclick="forwardAudio();"><i class="material-icons">fast_forward</i></button>
+    <button onclick="restartAudio();"><i class="material-icons">replay</i></button>
     </div>
     <hr>
     <div style="color: #61b6ff">

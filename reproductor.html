@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reproductor</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="duck.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<hr>
+  <hr>
+  <div align="center">
+  <img src="duck.png" height="70" width="70">
+  <hr>
+  </div>
+	<audio id="player" ontimeupdate="mostrarProgreso()">
+		<source src="love_lost.mp3" type="audio/mpeg">
+	</audio>
+	<div align="center">
+	<button type="button" id="play" onclick="play()"><i class="material-icons">play_arrow</i></button>
+	<button type="button" id="play" onclick="pause()"><i class="material-icons">pause</i></button>
+	<button type="button" id="play" onclick="back()"><i class="material-icons">fast_rewind</i></button>
+	<button type="button" id="play" onclick="forward()"><i class="material-icons">fast_forward</i></button>
+	<button type="button" id="play" onclick="stop()"><i class="material-icons">stop</i>
+	<button type="button" id="play" onclick="volumeUp()"><i class="material-icons">volume_up</i></button>
+	<button type="button" id="play" onclick="volumeDown()"><i class="material-icons">volume_down</i></button>
+	<br>
+	<progress  id= "progressBar" value="0" max="10">0%</progress>
+	<script type="text/javascript" src="reproductor.js"></script>
+	</div>
+
+</body>
+</html>
